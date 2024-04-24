@@ -258,3 +258,13 @@ span {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+
+.footer-menu a{
+  display: block
+}
+
+.copy{
+  text-align: center;
+  margin-top: 5rem;
+}
