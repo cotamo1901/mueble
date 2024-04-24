@@ -46,6 +46,25 @@ span {
   color: #037bc0;
 }
 
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn:hover {
+  background-color: #769c02;
+}
+/** utilidades **/
+
+.text-center {
+  text-align: center;
+}
+
 /* Header */
 .nombre-sitio {
   text-align: center;
@@ -102,10 +121,6 @@ span {
   padding-top: 5rem;
 }
 
-.categorias h2 {
-  text-align: center;
-}
-
 .categoria a {
   display: block;
   text-align: center;
@@ -136,14 +151,110 @@ span {
   background-size: 100%, 120rem;
 }
 
-.sobre-nosotros-grid{
- display: flex;
- justify-content: flex-end;
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
 }
 
-
-.texto-nosotros{
+.texto-nosotros {
   flex-basis: 50%;
   padding-left: 10rem;
-  color:white
+  color: white;
+}
+
+/**listado de productos **/
+
+.contenido-principal {
+  padding-top: 5rem;
+}
+
+.producto {
+  background-color: #037bc0;
+}
+
+.texto-producto {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+.texto-producto h3 {
+  margin: 0;
+}
+
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
+}
+.texto-producto .precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.producto:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.producto:nth-child(2) img,
+.producto:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.producto:nth-child(4) img,
+.producto:nth-child(5) img,
+.producto:nth-child(6) img {
+  height: 23rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.site-footer {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  padding: 5rem;
+
+}
+
+.grid-footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
